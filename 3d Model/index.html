@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8e6cc">
+  <title>Cornerstone — Burger &amp; Co.</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="scene" aria-label="Interactive 3D model of a neighborhood burger restaurant"></div>
+  <div class="loading" id="loading"><span>Preparing the scene</span></div>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">C</div>
+      <div><div class="brand-name">Cornerstone</div><div class="brand-caption">A neighborhood original</div></div>
+    </div>
+    <div class="top-tag">Architecture study &nbsp;·&nbsp; No. 01</div>
+  </header>
+  <section class="info-card" aria-label="Building information">
+    <div class="eyebrow">Good food, good neighbors</div>
+    <h1>Burger<br>&amp; Co.</h1>
+    <div class="description">A fresh take on the classic roadside diner. Warm brick, a little sunshine, and room for everyone.</div>
+    <div class="details">
+      <div><div class="detail-value">1968</div><div class="detail-label">Inspired by</div></div>
+      <div><div class="detail-value">1,840</div><div class="detail-label">Sq. feet</div></div>
+      <div><div class="detail-value">01</div><div class="detail-label">Drive-thru</div></div>
+    </div>
+  </section>
+  <nav class="controls" aria-label="Scene controls">
+    <span class="control-hint">Drag to explore</span>
+    <button class="control-button" id="reset" title="Reset view" aria-label="Reset view">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11a9 9 0 1 1 2.64 6.36M3 4v7h7"/></svg>
+    </button>
+    <button class="control-button" id="spin" title="Toggle rotation" aria-label="Toggle automatic rotation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9a7 7 0 0 1 11.6-2L20 12M4 12l2.8 5a7 7 0 0 0 11.6-2"/></svg>
+    </button>
+  </nav>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
